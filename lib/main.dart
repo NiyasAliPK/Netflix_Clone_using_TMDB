@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netflix_app_clone/controllers/screen_home_controller.dart';
-import 'package:netflix_app_clone/screens/root_page.dart';
+import 'package:netflix_app_clone/screens/screen_splash_screen.dart';
 
-void main() async {
-  final ScreenHomeController _controller = Get.put(ScreenHomeController());
-  await _controller.loadMovies();
-  await _controller.getdata();
+void main() {
   runApp(const MyApp());
 }
 
@@ -22,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: ScreenRootPage(),
+      home: const ScreenSplash(),
     );
   }
 }

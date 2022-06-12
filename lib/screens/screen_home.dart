@@ -293,83 +293,81 @@ class ScreenHome extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                child: SafeArea(
-                  child: Column(children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10.0),
-                          child: Image.asset(
-                            "assets/images/logo.ico",
-                            width: 35,
-                            fit: BoxFit.cover,
+              SafeArea(
+                child: Column(children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10.0),
+                        child: Image.asset(
+                          "assets/images/logo.ico",
+                          width: 35,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.collections_bookmark,
+                                color: Colors.white,
+                                size: 28,
+                              )),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Image.asset(
+                                "assets/images/profile.jpeg",
+                                fit: BoxFit.cover,
+                                width: 26,
+                                height: 26,
+                              ))
+                        ],
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      const Text(
+                        "Tv Shows",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white),
+                      ),
+                      const Text(
+                        "Movies",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white),
+                      ),
+                      Row(
+                        children: const [
+                          Text(
+                            "Categories",
+                            style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white),
                           ),
-                        ),
-                        Row(
-                          children: [
-                            IconButton(
-                                onPressed: () {},
-                                icon: const Icon(
-                                  Icons.collections_bookmark,
-                                  color: Colors.white,
-                                  size: 28,
-                                )),
-                            IconButton(
-                                onPressed: () {},
-                                icon: Image.asset(
-                                  "assets/images/profile.jpeg",
-                                  fit: BoxFit.cover,
-                                  width: 26,
-                                  height: 26,
-                                ))
-                          ],
-                        ),
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 15,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        const Text(
-                          "Tv Shows",
-                          style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white),
-                        ),
-                        const Text(
-                          "Movies",
-                          style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white),
-                        ),
-                        Row(
-                          children: const [
-                            Text(
-                              "Categories",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.white),
-                            ),
-                            SizedBox(
-                              width: 3,
-                            ),
-                            Icon(
-                              Icons.keyboard_arrow_down,
-                              color: Colors.white,
-                            )
-                          ],
-                        )
-                      ],
-                    )
-                  ]),
-                ),
+                          SizedBox(
+                            width: 3,
+                          ),
+                          Icon(
+                            Icons.keyboard_arrow_down,
+                            color: Colors.white,
+                          )
+                        ],
+                      )
+                    ],
+                  )
+                ]),
               )
             ],
           ),
